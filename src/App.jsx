@@ -7,7 +7,7 @@ function App() {
   return (
     <>
 
-      <FaWhatsapp className='absolute bottom-8 right-6 cursor-pointer text-5xl text-white' />
+      <FaWhatsapp className='fixed bottom-8 right-6 cursor-pointer text-5xl text-white' />
       <Snowfall
       color='#ffffffc1'
         snowflakeCount={100}
