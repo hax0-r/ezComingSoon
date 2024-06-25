@@ -1,15 +1,18 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa'
 import './App.css'
 import { Snowfall } from 'react-snowfall'
+import { Link } from 'react-router-dom'
+import { FiYoutube } from 'react-icons/fi'
 
 function App() {
 
   return (
     <>
-
-      <FaWhatsapp className='fixed bottom-8 right-6 cursor-pointer text-5xl text-white' />
+      <Link to={"https://api.whatsapp.com/send/?phone=%2B923201091220&text&type=phone_number&app_absent=0"} target='_blank'>
+        <FaWhatsapp className='fixed bottom-8 right-6 cursor-pointer text-5xl text-white' />
+      </Link>
       <Snowfall
-      color='#ffffffc1'
+        color='#ffffffc1'
         snowflakeCount={100}
         className="absolute top-0 left-0 w-full h-full" />
       <div className="bg-black w-screen h-screen">
@@ -21,10 +24,16 @@ function App() {
               <p>Be the first to know when our new site is live</p>
             </div>
             <div className="flex justify-center items-center gap-4">
-              <FaLinkedinIn className='text-xl cursor-pointer' />
-              <FaInstagram className='text-xl cursor-pointer' />
-              <FaFacebookF className='text-xl cursor-pointer' />
-              <FaTelegramPlane className='text-xl cursor-pointer' />
+              <Link target='_blank' to={"https://www.linkedin.com/company/ez-brand-builders/"}>
+                <FaLinkedinIn className='text-xl cursor-pointer' />
+              </Link>
+              <Link target='_blank' to={"https://www.instagram.com/ez.brandbuilders/"}>
+                <FaInstagram className='text-xl cursor-pointer' />
+              </Link>
+              <Link target='_blank' to={"https://www.facebook.com/ez.brandbuilders"}>
+                <FaFacebookF className='text-xl cursor-pointer' />
+              </Link>
+              <FiYoutube target='_blank' to={"https://www.youtube.com/ez.brandbuilders"} className='text-xl cursor-pointer' />
             </div>
           </div>
         </div>
