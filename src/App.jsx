@@ -20,8 +20,9 @@ function App() {
           <div className="flex justify-around items-center flex-col h-screen">
             <h1 className='text-xl'>EZ Brand Builders</h1>
             <div className="text-center">
-              <h2 className='text-4xl font-bold pb-3'>Coming Soon</h2>
-              <p>Be the first to know when our new site is live</p>
+              <h2 className='text-5xl font-bold pb-3'>Website</h2>
+              <p className='font-semibold'>Under Contruction</p>
+              <p className='text-[#ffffffa2] tracking-wider' >Please come back later</p>
             </div>
             <div className="flex justify-center items-center gap-4">
               <Link target='_blank' to={"https://www.linkedin.com/company/ez-brand-builders/"}>
